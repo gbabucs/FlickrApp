@@ -9,8 +9,11 @@
 import Foundation
 import Alamofire
 
-
 class ServiceManager {
+    
+    //--------------------------------------------------------------------------
+    // MARK: - Properties
+    //--------------------------------------------------------------------------
     
     private let flickrAPI: FlickrAPI
     
@@ -19,6 +22,10 @@ class ServiceManager {
     //--------------------------------------------------------------------------
     
     typealias ResponseHandler<T> = (Result<T, Error>) -> ()
+    
+    //--------------------------------------------------------------------------
+    // MARK: - Init
+    //--------------------------------------------------------------------------
     
     init(flickrAPI: FlickrAPI) {
         self.flickrAPI = flickrAPI
@@ -47,7 +54,6 @@ class ServiceManager {
                     
                     completion(.success(result))
                 case .failure(let error):
-                    print("Failed request with given url: \(url)", error)
                     completion(.failure(error))
                 }
             }

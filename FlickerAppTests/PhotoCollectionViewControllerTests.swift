@@ -20,8 +20,8 @@ class PhotoCollectionViewControllerTests: XCTestCase {
         super.setUp()
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        navigationController = storyboard.instantiateInitialViewController() as? UINavigationController
         
+        navigationController = storyboard.instantiateInitialViewController() as? UINavigationController
         sut1 = navigationController?.topViewController as? PhotoSearchViewController
         
         _ = sut1.view

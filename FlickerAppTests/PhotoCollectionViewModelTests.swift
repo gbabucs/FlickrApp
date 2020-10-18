@@ -28,7 +28,6 @@ class PhotoCollectionViewModelTests: XCTestCase {
         self.viewModel.photos = photos
         
         XCTAssertNotEqual(self.viewModel.photos.count, 100, "Expected both viewModel and model have different values")
-        
         XCTAssertEqual(self.viewModel.photos.count, 0, "Expected both viewModel and model have 0 values")
     }
     

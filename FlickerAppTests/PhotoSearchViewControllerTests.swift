@@ -14,7 +14,6 @@ class PhotoSearchViewControllerTests: XCTestCase {
     var sut: PhotoSearchViewController!
     
     override func setUp() {
-        
         super.setUp()
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

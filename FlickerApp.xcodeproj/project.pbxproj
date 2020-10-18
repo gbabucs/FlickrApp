@@ -184,12 +184,12 @@
 		6FDFCED42539FBFB00246849 /* FlickerApp */ = {
 			isa = PBXGroup;
 			children = (
-				6FDFCF53253C804100246849 /* FlickrResult.json */,
+				6FDFCF5C253C9EB100246849 /* MockSetup */,
 				6FDFCF34253C5BB300246849 /* Utils */,
 				6FDFCF2B253A001900246849 /* Extension */,
 				6FDFCF252539FFD200246849 /* Protocol */,
-				6FDFCF162539FEBE00246849 /* PhotoList */,
 				6FDFCF072539FD7400246849 /* PhotoSearch */,
+				6FDFCF162539FEBE00246849 /* PhotoList */,
 				6FDFCF002539FD0800246849 /* Model */,
 				6FDFCEF72539FC7900246849 /* Network */,
 				6FDFCED52539FBFB00246849 /* AppDelegate.swift */,
@@ -352,6 +352,14 @@
 				6FDFCF35253C5BCC00246849 /* ThreadHelper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		6FDFCF5C253C9EB100246849 /* MockSetup */ = {
+			isa = PBXGroup;
+			children = (
+				6FDFCF53253C804100246849 /* FlickrResult.json */,
+			);
+			path = MockSetup;
 			sourceTree = "<group>";
 		};
 		9175EE4DE1A5299B735C75CF /* Frameworks */ = {

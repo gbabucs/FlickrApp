@@ -15,6 +15,15 @@ class PhotoSearchHistoryTableViewCell: UITableViewCell {
     //--------------------------------------------------------------------------
     
     @IBOutlet weak var searchHistory: UILabel!
+    
+    //--------------------------------------------------------------------------
+    // MARK: - View Methods
+    //--------------------------------------------------------------------------
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.searchHistory.text = ""
+    }
 }
 
 //--------------------------------------------------------------------------
