@@ -35,9 +35,6 @@ extension PhotoCollectionViewController: UICollectionViewDataSource {
         let imageURL = viewModel.photos[index].imageURL
         
         cell.configure(with: imageURL)
-        
-        cell.layer.shouldRasterize = true
-        cell.layer.rasterizationScale = UIScreen.main.scale
 
         return cell
     }

@@ -33,11 +33,20 @@ class PhotoCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        progress.textLabel.text = "Loading"
+        self.progress.textLabel.text = "Loading"
         self.setupNavigationBar()
+        self.getPhotos()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    //--------------------------------------------------------------------------
+    // MARK: - Helpers
+    //--------------------------------------------------------------------------
+    
+    private func setupNavigationBar() {
+        self.navigationItem.title = viewModel?.navigationTitle
+    }
+    
+    private func getPhotos() {
         if NetworkState.isConnected() {
             self.progress.show(in: self.view)
             self.viewModel?.requestPhotos { error in
@@ -58,26 +67,22 @@ class PhotoCollectionViewController: UIViewController {
         }
     }
     
-    //--------------------------------------------------------------------------
-    // MARK: - Helpers
-    //--------------------------------------------------------------------------
-    
-    private func setupNavigationBar() {
-        self.navigationItem.title = viewModel?.navigationTitle
-    }
-    
     func updateCollectionView() {
-            if self.collectionView.numberOfSections == 0 {
-                self.collectionView.reloadData()
-            } else {
-                let numberOfSections = self.collectionView.numberOfSections
-                let lastIndexOfNewSections = numberOfSections + 2
-                
-                if lastIndexOfNewSections > numberOfSections {
+        if self.collectionView.numberOfSections == 0 {
+            self.collectionView.reloadData()
+        } else {
+            let numberOfSections = self.collectionView.numberOfSections
+            let lastIndexOfNewSections = numberOfSections + 2
+            
+            if lastIndexOfNewSections > numberOfSections {
+                self.collectionView.performBatchUpdates ({
                     let indexSet = IndexSet(integersIn: numberOfSections...lastIndexOfNewSections)
+                    
                     self.collectionView.insertSections(indexSet)
-                }
+                    self.collectionView.reloadData()
+                }, completion: nil)
             }
+        }
     }
     
 }
