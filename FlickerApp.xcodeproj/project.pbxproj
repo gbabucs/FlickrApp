@@ -63,6 +63,8 @@
 		6FDFCF55253C804200246849 /* FlickrResult.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FDFCF53253C804100246849 /* FlickrResult.json */; };
 		6FDFCF56253C805500246849 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFCF35253C5BCC00246849 /* ThreadHelper.swift */; };
 		6FDFCF58253C81D800246849 /* PhotoCollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFCF57253C81D800246849 /* PhotoCollectionViewControllerTests.swift */; };
+		6FDFCF5A253C914D00246849 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6FDFCF59253C914D00246849 /* README.md */; };
+		6FDFCF5B253C914D00246849 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6FDFCF59253C914D00246849 /* README.md */; };
 		EF37A0816E1E316C89BC8CD9 /* Pods_FlickerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE99A140E1F14021642B5BCE /* Pods_FlickerApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +123,7 @@
 		6FDFCF51253C7EA700246849 /* PhotoCollectionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewModelTests.swift; sourceTree = "<group>"; };
 		6FDFCF53253C804100246849 /* FlickrResult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FlickrResult.json; sourceTree = "<group>"; };
 		6FDFCF57253C81D800246849 /* PhotoCollectionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewControllerTests.swift; sourceTree = "<group>"; };
+		6FDFCF59253C914D00246849 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A2C0D44A722C5AD85CBFC7CD /* Pods-FlickerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerApp.debug.xcconfig"; path = "Target Support Files/Pods-FlickerApp/Pods-FlickerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DE99A140E1F14021642B5BCE /* Pods_FlickerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB4BE1FCFB015A4941B421C /* Pods_FlickerAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickerAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +163,7 @@
 		6FDFCEC92539FBFB00246849 = {
 			isa = PBXGroup;
 			children = (
+				6FDFCF59253C914D00246849 /* README.md */,
 				6FDFCED42539FBFB00246849 /* FlickerApp */,
 				6FDFCEEB2539FBFD00246849 /* FlickerAppTests */,
 				6FDFCED32539FBFB00246849 /* Products */,
@@ -446,6 +450,7 @@
 			files = (
 				6FDFCEE22539FBFC00246849 /* LaunchScreen.storyboard in Resources */,
 				6FDFCEDF2539FBFC00246849 /* Assets.xcassets in Resources */,
+				6FDFCF5A253C914D00246849 /* README.md in Resources */,
 				6FDFCEDD2539FBFB00246849 /* Main.storyboard in Resources */,
 				6FDFCF54253C804200246849 /* FlickrResult.json in Resources */,
 			);
@@ -455,6 +460,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FDFCF5B253C914D00246849 /* README.md in Resources */,
 				6FDFCF55253C804200246849 /* FlickrResult.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
