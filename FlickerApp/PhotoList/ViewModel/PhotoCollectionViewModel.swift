@@ -11,7 +11,7 @@ import Foundation
 class PhotoCollectionViewModel {
     
     //--------------------------------------------------------------------------
-    // MARK: - Static Properties
+    // MARK: - Properties
     //--------------------------------------------------------------------------
     
     let itemsPerPage = 30
@@ -19,17 +19,17 @@ class PhotoCollectionViewModel {
     let itemsLimit = 15
     let itemsPerSection = 10
     
-    //--------------------------------------------------------------------------
-    // MARK: - Properties
-    //--------------------------------------------------------------------------
-    
     let searchText: String
     let navigationTitle: String
-    var photoRequest: PhotoRequest
     
+    var photoRequest: PhotoRequest
     var photos: [Photo] = []
     var currentPage = 0
     var totalPages = 0
+    
+    //--------------------------------------------------------------------------
+    // MARK: - Struct
+    //--------------------------------------------------------------------------
     
     struct Key {
         static let method = "flickr.photos.search"

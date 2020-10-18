@@ -37,6 +37,37 @@ class PhotoRequestTests: XCTestCase {
         XCTAssertEqual(totalPages, imageResult.photos.pages, "Expected both should have same pages count")
     }
     
+    func test_request_Photos() {        
+        let photoRequest = PhotoRequest(searchQuery: "Paris", method: "flickr.photos.search", page: 1, itemsPerPage: 30)
+        let expectation = self.expectation(description: "Wait for url to load.")
+        var photos: [Photo]?
+        
+        photoRequest.requestPhotos() { photosResponse, metaData, error in
+            photos = photosResponse
+            expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssertNotNil(photos)
+    }
+    
+    func test_request_Photos_ReturnError() {
+        let photoRequest = PhotoRequest(searchQuery: "Paris", method: "", page: 1, itemsPerPage: 30)
+        let expectation = self.expectation(description: "Wait for url to load.")
+        var appError: AppError?
+        
+        photoRequest.requestPhotos() { photos, metaData, error in
+            XCTAssertEqual(photos?.count, nil)
+            appError = error as? AppError
+            expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        let expectedError  = AppError.jsonError
+        XCTAssertEqual(appError, expectedError)
+    }
+    
 }
 
 

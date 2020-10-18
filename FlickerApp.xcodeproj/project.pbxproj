@@ -208,12 +208,12 @@
 				6FDFCEEC2539FBFD00246849 /* FlickerAppTests.swift */,
 				6FDFCEEE2539FBFD00246849 /* Info.plist */,
 				6FDFCF37253C7B0600246849 /* PhotoSearchViewControllerTests.swift */,
+				6FDFCF57253C81D800246849 /* PhotoCollectionViewControllerTests.swift */,
 				6FDFCF49253C7CC000246849 /* PhotoSearchViewModelTests.swift */,
+				6FDFCF51253C7EA700246849 /* PhotoCollectionViewModelTests.swift */,
 				6FDFCF4B253C7D6A00246849 /* PhotoRequestTests.swift */,
 				6FDFCF4D253C7E2E00246849 /* NetworkStateTests.swift */,
 				6FDFCF4F253C7E5900246849 /* FlickrAPITests.swift */,
-				6FDFCF51253C7EA700246849 /* PhotoCollectionViewModelTests.swift */,
-				6FDFCF57253C81D800246849 /* PhotoCollectionViewControllerTests.swift */,
 			);
 			path = FlickerAppTests;
 			sourceTree = "<group>";

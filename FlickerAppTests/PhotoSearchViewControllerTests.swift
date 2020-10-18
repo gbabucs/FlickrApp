@@ -76,6 +76,11 @@ class PhotoSearchViewControllerTests: XCTestCase {
         let targetIdentifier = "showPhotoCollectionViewController"
         XCTAssertTrue(hasSegueWithIdentifier(id: targetIdentifier))
     }
+    
+    func test_Alert_Not_Show() {
+        sut.showAlert(with: "Title", error: "error")
         
+        XCTAssertFalse(sut.presentingViewController is UIAlertController)
+    }
 }
 

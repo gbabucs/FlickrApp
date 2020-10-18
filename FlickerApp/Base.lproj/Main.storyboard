@@ -35,19 +35,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCC-RK-d10">
-                                                    <rect key="frame" x="20" y="24" width="355" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="1MC-2i-p2U"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="20" y="24.5" width="50" height="25.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="wCC-RK-d10" firstAttribute="leading" secondItem="b1l-4f-vph" secondAttribute="leadingMargin" id="VUF-Zs-eOc"/>
-                                                <constraint firstItem="wCC-RK-d10" firstAttribute="trailing" secondItem="b1l-4f-vph" secondAttribute="trailingMargin" id="Wce-9u-uuY"/>
-                                                <constraint firstItem="wCC-RK-d10" firstAttribute="centerY" secondItem="b1l-4f-vph" secondAttribute="centerY" constant="9" id="q8L-SG-lOT"/>
+                                                <constraint firstItem="wCC-RK-d10" firstAttribute="leading" secondItem="b1l-4f-vph" secondAttribute="leadingMargin" id="Vg7-wT-fjL"/>
+                                                <constraint firstItem="wCC-RK-d10" firstAttribute="centerY" secondItem="b1l-4f-vph" secondAttribute="centerY" id="fIV-ua-pqs"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
