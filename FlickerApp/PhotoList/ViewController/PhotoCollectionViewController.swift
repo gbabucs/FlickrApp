@@ -35,6 +35,11 @@ class PhotoCollectionViewController: UIViewController {
         
         self.progress.textLabel.text = "Loading"
         self.setupNavigationBar()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         self.getPhotos()
     }
     
